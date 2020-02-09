@@ -335,3 +335,4 @@ box.getColor();
 const module1 = require('./testModule');
 
 console.log(module1.square(4));
+console.log(module1.cube(100));

@@ -332,7 +332,7 @@ box.getColor();
 //--------------------------------------------------------------------------------------------------------------------------
 //  JS Custom Modules
 
-const module1 = require('./testModule');
+import { square, cube } from './testModule';
 
-console.log(module1.square(4));
-console.log(module1.cube(100));
+console.log(square(4));
+console.log(cube(100));

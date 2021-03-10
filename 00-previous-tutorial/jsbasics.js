@@ -59,22 +59,33 @@ demoObj.somefunction();
 //--------------------------------------------------------------------------------------------------------------------------
 // JS Objects
 
-/*
 
-var person1 = {
-    fname: "Lorem",
-    lname: "Ipsum",
-    age: 30,
-    location: "India",
-    getInfo: ()=>{
-        console.log("F Name: "+this.fname);
-        console.log("L Name: "+this.lname);
-        console.log("Age: "+this.age);
-    }
-}
-person1.getInfo();
 
-*/
+// let person1 = {
+//     fname: "Lorem",
+//     lname: "Ipsum",
+//     age: 30,
+//     getInfo: ()=>{
+//         console.log("First Name: "+this.fname);
+//         console.log("Last Name: "+this.lname);
+//         console.log("Age: "+this.age);
+//     },
+//     getInfo1: function(){
+//         console.log("First Name: "+this.fname);
+//         console.log("Last Name: "+this.lname);
+//         console.log("Age: "+this.age);
+//     },
+//     getInfo2: (personObj)=>{
+//         console.log("First Name: "+personObj.fname);
+//         console.log("Last Name: "+personObj.lname);
+//         console.log("Age: "+personObj.age);
+//     },
+// }
+// person1.getInfo();
+// person1.getInfo1();
+// person1.getInfo2(person1);
+
+
 
 //--------------------------------------------------------------------------------------------------------------------------
 // JS Classes
@@ -332,7 +343,7 @@ box.getColor();
 //--------------------------------------------------------------------------------------------------------------------------
 //  JS Custom Modules
 
-import { square, cube } from './testModule';
+// import { square, cube } from './my_modules/testModule';
 
-console.log(square(4));
-console.log(cube(100));
+// console.log(square(4));
+// console.log(cube(100));

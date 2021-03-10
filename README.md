@@ -1,2 +1,2 @@
 # NodeJSTutorials
-My NodeJS Tutorials
+My NodeJS Tutorials covering the fundamentals of JavaScript

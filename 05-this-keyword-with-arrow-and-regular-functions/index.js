@@ -42,7 +42,7 @@ function logThisWithRegularFunc(){
 // Arrow Function
 let logThisWithArrowFunc = ()=>{
     this.someInternalString = "Hello Internal String 2";
-    console.log(this);  // 'this' over here again refers to the module (index.js) object - 'THIS' REMAINS THE SAME BECAUSE THE ARROW FUNCTION DOES NOT REDEFINE THE SCOPE OF 'this', AS IN LINE 26 /_/_/
+    console.log(this);  // 'this' over here again refers to the module (index.js) object - 'THIS' REMAINS THE SAME BECAUSE THE ARROW FUNCTION DOES NOT REDEFINE THE SCOPE OF 'this', AS IN LINE 30 /_/_/
     console.log(this == module.exports);
     console.log("-------------");
 }
@@ -54,7 +54,7 @@ let logThisWithArrowFunc = ()=>{
 
 console.log("------------------------2. Arrow and Regular functions and the value of 'this' in class definitions------------------------\n");
 
-class myClass{
+class myClass{  // A Class definition does not redefine 'this' until and unless an object of the class is created
     myData = undefined;
 
     constructor(someData){
@@ -116,7 +116,7 @@ dumiObj.logThisWithArrowFunc();
 console.log("------------------------3. Arrow and Regular functions and the value of 'this' in object definitions------------------------")
 
 
-let myObject = {
+let myObject = {            // an object declaration redefines the scope of 'this', compared to a class definition
     myData: undefined,
     
     getThisRegular: function(){
